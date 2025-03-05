@@ -40,14 +40,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Greeting()
+            NotesPage()
         }
     }
 }
 
 
 @Composable
-fun Greeting(notesViewModel: NotesViewModel = viewModel()) {
+fun NotesPage(notesViewModel: NotesViewModel = viewModel()) {
 
     val itemTextState = notesViewModel.itemTextState
     val itemListState = notesViewModel.itemListState
